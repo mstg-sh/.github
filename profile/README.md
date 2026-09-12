@@ -9,7 +9,7 @@
 
 ### So we make it free.
 
-<sub>`mstg.sh` · no trials, no seats, no credit card, no catch</sub>
+<sub>[`mstg.sh`](https://mstg.sh) · free to use · no trials, no seats, no credit card</sub>
 
 </div>
 
@@ -33,11 +33,16 @@ Nothing personal. We just read your pricing page.
 
 **3. Pay because you want to.** Supporting Mustang keeps the software alive. It is not the price of getting your files back.
 
+One free account, signed in with GitHub, carries your settings and history between your machines. It is an identity, not a destination: your work stays on your computer, and everything keeps working if the account is gone.
+
 ## Drops
 
 Every release is its own repo. Numbered, standalone, finished.
 
-`MSTG/001` is coming.
+| Drop | | |
+| --- | --- | --- |
+| `MSTG/002` | **[Mustang Swarm](https://github.com/mstg-sh/mustang-swarm)** · [mstg.sh/swarm](https://mstg.sh/swarm/) | Run coding agents on the machines you already own. Several agents, one task, isolated worktrees, real verification, keep the best answer. |
+| `MSTG/001` | **Security readiness** · in progress | Free SOC 2 configuration readiness for small technical teams. |
 
 ## What should be free next?
 
