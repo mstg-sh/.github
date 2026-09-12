@@ -1,0 +1,44 @@
+name: Nominate a target
+description: Software you think should not have been a subscription.
+title: "[target] "
+labels: ["target"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nominations are ranked by 👍 reactions. The one at the top gets built.
+  - type: input
+    id: product
+    attributes:
+      label: The product
+      placeholder: Acme Scheduler
+    validations:
+      required: true
+  - type: input
+    id: price
+    attributes:
+      label: What it costs
+      placeholder: $19/month, per seat
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it actually solve?
+      description: The underlying problem, in plain language. Not their feature list.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why shouldn't this be a subscription?
+      description: Thin wrapper over an API? No ongoing cost to serve? Solved once, billed forever?
+    validations:
+      required: true
+  - type: textarea
+    id: core
+    attributes:
+      label: What would the free version need to do to actually replace it?
+      description: The minimum that makes someone cancel. Be honest.
+    validations:
+      required: true
