@@ -19,17 +19,19 @@ A lot of what you pay for monthly is a wrapper.
 
 A form in front of somebody else's API. A cron job with a dashboard. Four hundred lines of real logic and a genuinely excellent pricing page. The hard part was never the software. The hard part was convincing you the software was hard.
 
-So we take the problem, not the product, and build the whole thing again from nothing. Our code. Our design. Nothing of theirs. Then we release it, free, forever.
+Some software should never stop working because you stopped paying. A subscription makes sense when the product has an ongoing cost. Servers. Storage. People doing work for you. Renting a calculator is something else.
+
+So we take the problem, not the product, and build the whole thing again from nothing. Our code. Our design. Nothing of theirs. Then we release it. Free to use. Paying is allowed. Coercion is not.
 
 Nothing personal. We just read your pricing page.
 
 ## House rules
 
-**1. Free forever.** The core product. Not a trial of the core product. Not a free tier shaped like a hostage situation.
+**1. Free to use.** The useful product works without payment. Not a trial of it.
 
-**2. No crippleware.** The thing you came for works. All of it. Export included.
+**2. No hostageware.** No locked exports. No deleted work. No artificial expiration date.
 
-**3. Built independently.** Same problem, our implementation. We compete on quality, not on being cheaper than $20.
+**3. Pay because you want to.** Supporting Mustang keeps the software alive. It is not the price of getting your files back.
 
 ## Drops
 
