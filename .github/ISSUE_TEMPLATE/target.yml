@@ -1,5 +1,5 @@
-name: Nominate a target
-description: Software you think should not have been a subscription.
+name: Nominate a tool
+description: Something the agent era is missing, or something that exists but should run on your machine instead of someone else's.
 title: "[target] "
 labels: ["target"]
 body:
@@ -8,37 +8,37 @@ body:
       value: |
         Nominations are ranked by 👍 reactions. The one at the top gets built.
   - type: input
-    id: product
+    id: tool
     attributes:
-      label: The product
-      placeholder: Acme Scheduler
+      label: The tool
+      placeholder: A local replay of every tool call my agent made yesterday
     validations:
       required: true
   - type: input
-    id: price
+    id: today
     attributes:
-      label: What it costs
-      placeholder: $19/month, per seat
+      label: What people use today
+      placeholder: Nothing / a SaaS at $30 per seat / a script everyone rewrites
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
       label: What problem does it actually solve?
-      description: The underlying problem, in plain language. Not their feature list.
+      description: The underlying problem, in plain language. Not a feature list.
     validations:
       required: true
   - type: textarea
     id: why
     attributes:
-      label: Why shouldn't this be a subscription?
-      description: Thin wrapper over an API? No ongoing cost to serve? Solved once, billed forever?
+      label: Why should this run on the user's machine?
+      description: What leaves the laptop today that has no business leaving? What breaks when the vendor's server is down?
     validations:
       required: true
   - type: textarea
     id: core
     attributes:
-      label: What would the free version need to do to actually replace it?
-      description: The minimum that makes someone cancel. Be honest.
+      label: What would it need to do for you to actually use it?
+      description: The minimum that makes it a daily driver. Be honest.
     validations:
       required: true
