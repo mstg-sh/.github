@@ -1,5 +1,5 @@
-name: Nominate the next drop
-description: A tool that should exist, or one that exists and should run on your machine instead of theirs.
+name: Nominate a drop
+description: Software you think should exist, or something that should run on your machine instead of somebody else's.
 title: "[drop] "
 labels: ["target"]
 body:
