@@ -1,6 +1,6 @@
-name: Nominate a tool
-description: Something the agent era is missing, or something that exists but should run on your machine instead of someone else's.
-title: "[target] "
+name: Nominate the next drop
+description: A tool that should exist, or one that exists and should run on your machine instead of theirs.
+title: "[drop] "
 labels: ["target"]
 body:
   - type: markdown
@@ -11,34 +11,34 @@ body:
     id: tool
     attributes:
       label: The tool
-      placeholder: A local replay of every tool call my agent made yesterday
+      placeholder: One sentence. What it does.
     validations:
       required: true
   - type: input
     id: today
     attributes:
-      label: What people use today
+      label: What you use today
       placeholder: Nothing / a SaaS at $30 per seat / a script everyone rewrites
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: What problem does it actually solve?
-      description: The underlying problem, in plain language. Not a feature list.
+      label: The actual problem
+      description: In plain language. Not a feature list.
     validations:
       required: true
   - type: textarea
-    id: why
+    id: local
     attributes:
-      label: Why should this run on the user's machine?
-      description: What leaves the laptop today that has no business leaving? What breaks when the vendor's server is down?
+      label: Why it should be a drop
+      description: What leaves your machine today that has no business leaving? What breaks when the vendor is down? What is finished about it that they keep charging for?
     validations:
       required: true
   - type: textarea
     id: core
     attributes:
-      label: What would it need to do for you to actually use it?
-      description: The minimum that makes it a daily driver. Be honest.
+      label: The minimum that makes it a daily driver
+      description: Be honest. The version you would actually switch to.
     validations:
       required: true

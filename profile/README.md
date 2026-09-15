@@ -5,49 +5,45 @@
   <img src="https://raw.githubusercontent.com/mstg-sh/.github/main/profile/black.png" width="120" alt="Mustang">
 </picture>
 
-### The agent runs on your laptop.
+### We ship finished software.
 
-### So does everything else.
+### One drop at a time.
 
-<sub>[`mstg.sh`](https://mstg.sh) · the load-bearing parts of running a coding agent · no server, no seats, no telemetry</sub>
+<sub>[`mstg.sh`](https://mstg.sh) · one product, one repo, one job · runs on your machine · works whether or not you pay</sub>
 
 </div>
 
 ---
 
-A coding agent is a process running as your user. It has your SSH key, your npm token, your AWS profile and push access to main. It reads whatever is in the repo, including the README a stranger wrote, and it does what the text says. That is not a bug in one vendor's product. That is what a coding agent is.
+Mustang is a small engineering group. Every release is a drop: numbered, standalone, done. It has its own repository and a README that fits on one screen. There is no suite it belongs to, no "coming soon" tab, no beta that never ends. When it works, we number it and move on.
 
-You would not give a contractor that much access without a second pair of eyes and a way back. The agent should get both. Locally, in the same process tree, where a decision can actually stop the call instead of describing it afterwards.
+Most software is unfinished on purpose, because a finished product is hard to keep charging for. We do not have that problem. Ours is done when you can install it and forget where it came from.
 
-So we build those parts and ship them as files on your disk. The gate listens on `127.0.0.1` and answers 403 to any other address. Receipts are newline-delimited JSON. Snapshots are content-addressed blobs. Open any of it with `cat`. Delete the directory and the software forgets everything; we never knew.
-
-Nothing personal. We just read your architecture diagram.
+Everything a drop knows lives on your disk in a format you can open: SQLite, JSON lines, plain files with hashes for names. No telemetry, no crash reporter, no update check. If a problem genuinely needs a server we will say so. So far none has.
 
 ## House rules
 
-**1. Runs on your machine.** Laptop, spare box, the Mac mini under the desk. We do not have a cloud to sell you.
+**1. Finished.** Numbered, standalone, done. No platform, no roadmap, no beta that never ends.
 
-**2. Nothing in the middle.** No backend, no relay, no telemetry. If a byte left your disk, you sent it.
+**2. Runs on your machine.** Your data stays where it is. No server unless the problem has one. We do not have a cloud to sell you.
 
 **3. Pay because you want to.** It works without paying. Paying keeps it going. Nothing is held for ransom.
 
-Where a drop has an account, it is one free GitHub sign-in that carries settings between your machines. Identity, not destination. Your work stays on your computer, and everything keeps working if the account is gone.
+Where a drop has an account, it is one free GitHub sign-in that carries your settings between machines. Never required, never sees your work, and everything on disk keeps running if you delete it.
 
 ## Drops
 
-One repository, one name, one job. Install the one you need.
-
 | Drop | | |
 | --- | --- | --- |
-| `MSTG/003` | **[Mustang Firewall](https://github.com/mstg-sh/mustang-firewall)** · [mstg.sh/firewall](https://mstg.sh/firewall/) | Most of your supply chain is one `npx -y` away. Hash every MCP server's tool surface and diff it on every start. Scan what the agent reads for instructions meant for the model. Hold `rm -rf /` for a click. Rewind what a prompt did. Forty attacks in the redteam pack; fire them at your own gate. |
-| `MSTG/002` | **[Mustang Swarm](https://github.com/mstg-sh/mustang-swarm)** · [mstg.sh/swarm](https://mstg.sh/swarm/) | Same task, four agents, four worktrees, on hardware you already own. Your test suite picks the winner. "Done" is a claim; green is a result. |
-| `MSTG/001` | **Security readiness** · in progress | Free SOC 2 configuration readiness for small technical teams. Point it at your GitHub and see what an auditor would. |
+| `MSTG/003` | **[Mustang Firewall](https://github.com/mstg-sh/mustang-firewall)** · [mstg.sh/firewall](https://mstg.sh/firewall/) | A gate on every tool call your coding agent makes. Pin the MCP servers, scan what it reads, hold the dangerous call for a click, rewind what a prompt did. One binary, no server. |
+| `MSTG/002` | **[Mustang Swarm](https://github.com/mstg-sh/mustang-swarm)** · [mstg.sh/swarm](https://mstg.sh/swarm/) | Same task, four agents, four worktrees, on hardware you already own. Your test suite picks the winner. |
+| `MSTG/001` | **Mustang Readiness** · in progress | SOC 2 configuration readiness for small technical teams. Point it at your GitHub and see what the auditor will see, before the auditor does. |
 
-## What is missing?
+## The list is public
 
-Nominate a tool that should exist, or one that exists and should stop phoning home. Votes sort the list. We start at the top.
+We build what we needed and could not get without a seat licence. That is a long list, and ours is not the only one. Nominate a tool that should exist, or one that exists and should run on your machine instead of theirs. Votes sort it. We start at the top.
 
-**[Nominate a tool](https://github.com/mstg-sh/.github/issues/new?template=target.yml)**
+**[Nominate the next drop](https://github.com/mstg-sh/.github/issues/new?template=target.yml)**
 
 We're not saying it'll be yours. We're just saying the list is public.
 
