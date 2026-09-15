@@ -5,47 +5,47 @@
   <img src="https://raw.githubusercontent.com/mstg-sh/.github/main/profile/black.png" width="120" alt="Mustang">
 </picture>
 
-### Agents on your machine.
+### The agent runs on your laptop.
 
-### Nothing in the middle.
+### So does everything else.
 
-<sub>[`mstg.sh`](https://mstg.sh) · tools for people who let a coding agent loose on a real repo · no backend, no seats, no telemetry</sub>
+<sub>[`mstg.sh`](https://mstg.sh) · the load-bearing parts of running a coding agent · no server, no seats, no telemetry</sub>
 
 </div>
 
 ---
 
-A coding agent is a process running as you, with your git credentials, your AWS profile, and whatever `npx -y` pulled down this morning. Then it reads a README somebody else wrote and does what the README says. That is the whole security model. It is also the whole product, so nobody upstream is in a hurry to fix it.
+A coding agent is a process running as your user. It has your SSH key, your npm token, your AWS profile and push access to main. It reads whatever is in the repo, including the README a stranger wrote, and it does what the text says. That is not a bug in one vendor's product. That is what a coding agent is.
 
-The industry's answer is a dashboard. Ship every tool call to a SaaS, get a compliance PDF back, twelve dollars a seat. We looked at that for a while. The call is happening on this laptop. Decide here.
+You would not give a contractor that much access without a second pair of eyes and a way back. The agent should get both. Locally, in the same process tree, where a decision can actually stop the call instead of describing it afterwards.
 
-So we build the tools and ship them as files on your disk. The daemon listens on `127.0.0.1` and returns 403 to everything else. Receipts are JSONL. Snapshots are content-addressed. The lockfile is a lockfile. Read all of it with `cat`; delete the directory and we would never know.
+So we build those parts and ship them as files on your disk. The gate listens on `127.0.0.1` and answers 403 to any other address. Receipts are newline-delimited JSON. Snapshots are content-addressed blobs. Open any of it with `cat`. Delete the directory and the software forgets everything; we never knew.
 
 Nothing personal. We just read your architecture diagram.
 
 ## House rules
 
-**1. Runs on your machine.** Laptop, spare box, the Mac mini under the desk. Never our cloud. There is not one.
+**1. Runs on your machine.** Laptop, spare box, the Mac mini under the desk. We do not have a cloud to sell you.
 
-**2. Nothing in the middle.** No backend, no telemetry, no relay. If it left your disk, you sent it.
+**2. Nothing in the middle.** No backend, no relay, no telemetry. If a byte left your disk, you sent it.
 
-**3. Pay because you want to.** It works without paying. Paying keeps it alive. Nothing is held hostage.
+**3. Pay because you want to.** It works without paying. Paying keeps it going. Nothing is held for ransom.
 
-Where a drop offers an account, it is one free GitHub sign-in that carries settings between your machines. Identity, not destination. Your work stays on your computer and everything keeps working if the account is gone.
+Where a drop has an account, it is one free GitHub sign-in that carries settings between your machines. Identity, not destination. Your work stays on your computer, and everything keeps working if the account is gone.
 
 ## Drops
 
-Every release is its own repo. Numbered, standalone, finished. Take the one you need.
+One repository, one name, one job. Install the one you need.
 
 | Drop | | |
 | --- | --- | --- |
-| `MSTG/003` | **[Mustang Firewall](https://github.com/mstg-sh/mustang-firewall)** · [mstg.sh/firewall](https://mstg.sh/firewall/) | `npx` is `curl \| sh` with a suit on. Pin every MCP server's tool surface, scan what the agent reads, hold `rm -rf /` for a click, rewind what a prompt did. Forty attacks in the redteam pack; run them against your own gate. |
-| `MSTG/002` | **[Mustang Swarm](https://github.com/mstg-sh/mustang-swarm)** · [mstg.sh/swarm](https://mstg.sh/swarm/) | Give four agents the same task on the machines you already own. Each in its own worktree, each judged by your test suite. Keep the one that passes. |
-| `MSTG/001` | **Security readiness** · in progress | Free SOC 2 configuration readiness for small technical teams. Point it at your GitHub, see what an auditor would. |
+| `MSTG/003` | **[Mustang Firewall](https://github.com/mstg-sh/mustang-firewall)** · [mstg.sh/firewall](https://mstg.sh/firewall/) | Most of your supply chain is one `npx -y` away. Hash every MCP server's tool surface and diff it on every start. Scan what the agent reads for instructions meant for the model. Hold `rm -rf /` for a click. Rewind what a prompt did. Forty attacks in the redteam pack; fire them at your own gate. |
+| `MSTG/002` | **[Mustang Swarm](https://github.com/mstg-sh/mustang-swarm)** · [mstg.sh/swarm](https://mstg.sh/swarm/) | Same task, four agents, four worktrees, on hardware you already own. Your test suite picks the winner. "Done" is a claim; green is a result. |
+| `MSTG/001` | **Security readiness** · in progress | Free SOC 2 configuration readiness for small technical teams. Point it at your GitHub and see what an auditor would. |
 
 ## What is missing?
 
-Nominate a tool that should exist, or one that exists and should not phone home. Votes rank the list. We build from the top.
+Nominate a tool that should exist, or one that exists and should stop phoning home. Votes sort the list. We start at the top.
 
 **[Nominate a tool](https://github.com/mstg-sh/.github/issues/new?template=target.yml)**
 
@@ -55,6 +55,4 @@ We're not saying it'll be yours. We're just saying the list is public.
 
 <div align="center">
 <sub>It is your computer. Use it.</sub>
-
-<sub>**Your agents. Your machine.**</sub>
 </div>
